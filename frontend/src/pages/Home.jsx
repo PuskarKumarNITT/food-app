@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Card from '../components/Card'
 
 const Home = () => {
   return (
-    <div>
+    <div className='h-screen w-screen overflow-hidden'>
       <Navbar></Navbar>
-      Home Page
+      <Card></Card>
     </div>
   )
 }

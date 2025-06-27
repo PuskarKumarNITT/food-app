@@ -3,25 +3,30 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import App from "../App";
+import Errorpage from "../pages/Errorpage";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App/>,
+        element: <App />,
         children: [
             {
                 path: "",
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: "login",
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: 'register',
-                element: <Register/>
+                element: <Register />
             }
         ]
+
+    }, {
+        path: "*",
+        element: <Errorpage />
     }
 ])
 
